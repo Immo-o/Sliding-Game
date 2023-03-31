@@ -1,7 +1,7 @@
 import random
 
 
-def get_random_board(N: int, iterations: int = 100) -> list:
+def get_random_board(N: int, iterations: int = 1000) -> list:
     """
     Generate a random NxN board and scramble it.
 
@@ -61,8 +61,5 @@ def display_board(board: list) -> None:
 def to_one_dimension(board) -> list:
     return [value for row in board for value in row]
 
-
 if __name__ == "__main__":
-    board = get_random_board(6, 100000)
-    display_board(board)
-    print(to_one_dimension(board))
+    print(display_board(get_random_board(3)))
