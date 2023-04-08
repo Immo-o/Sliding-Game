@@ -62,4 +62,4 @@ def to_one_dimension(board) -> list:
     return [value for row in board for value in row]
 
 if __name__ == "__main__":
-    print(display_board(get_random_board(3)))
+    print(to_one_dimension(get_random_board(5)))
